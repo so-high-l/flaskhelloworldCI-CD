@@ -11,6 +11,10 @@ pipeline {
         IMAGE_NAME = "helloworld-flask"
     }
 
+    triggers {
+        pollSCM '* * * * *'
+    }
+
     stages {
         stage('Checkout') {
             steps {
