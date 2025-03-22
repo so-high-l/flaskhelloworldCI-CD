@@ -1,6 +1,10 @@
 pipeline {
 
-    agent any
+    agent {
+        node {
+            label 'jenkins-agent-with-docker'
+        }
+    }
 
     environment {
         // You can define environment variables such as the image name here
