@@ -1,10 +1,6 @@
 pipeline {
 
-    agent {
-        node {
-            label 'docker-agent-python'
-        }
-    }
+    agent any
 
     environment {
         // You can define environment variables such as the image name here
